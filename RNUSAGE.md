@@ -30,8 +30,6 @@
 
 #### 在已有工程里添加RN部分
 
-
-
 参考教程：
 
 [使用Cocoapods集成react native](http://www.jianshu.com/p/c738dc11d867)
@@ -41,6 +39,17 @@
 [React Native通过cocoaPods集成到现有iOS工程详解](http://www.cnblogs.com/yzx0803060320/p/5377518.html)
 
 [新手iOS原生接入ReactNative遇到的坑记录](http://www.jianshu.com/p/b182722df7a5)
+
+
+
+#### 一些别的链接
+
+[Git SSH Key 生成步骤](http://blog.csdn.net/qq_32385309/article/details/52013036)
+
+
+
+
+
 
 
 
