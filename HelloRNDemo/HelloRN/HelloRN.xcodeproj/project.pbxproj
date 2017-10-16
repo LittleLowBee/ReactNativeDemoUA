@@ -17,7 +17,6 @@
 		A256D5881F9095E40071A0DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A256D5871F9095E40071A0DA /* main.m */; };
 		A256D5921F9095E40071A0DA /* HelloRNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A256D5911F9095E40071A0DA /* HelloRNTests.m */; };
 		A256D59D1F9095E40071A0DA /* HelloRNUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A256D59C1F9095E40071A0DA /* HelloRNUITests.m */; };
-		A256D5B71F90A24F0071A0DA /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = A256D5B61F90A24F0071A0DA /* index.ios.js */; };
 		C7F858836FBEF921C83B59F9 /* libPods-HelloRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0D77AA1EE67D8C86847575 /* libPods-HelloRNTests.a */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +60,6 @@
 		A256D5981F9095E40071A0DA /* HelloRNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloRNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A256D59C1F9095E40071A0DA /* HelloRNUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloRNUITests.m; sourceTree = "<group>"; };
 		A256D59E1F9095E40071A0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A256D5B61F90A24F0071A0DA /* index.ios.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
 		D30D87EA30B95A35D6DCEA08 /* Pods-HelloRNUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloRNUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloRNUITests/Pods-HelloRNUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4069BDFFBFF9E197C5B95AD /* Pods-HelloRNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloRNTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloRNTests/Pods-HelloRNTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F816E007AD959D4111CACFE4 /* Pods-HelloRNUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloRNUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloRNUITests/Pods-HelloRNUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				A256D5791F9095E40071A0DA /* AppDelegate.m */,
 				A256D57B1F9095E40071A0DA /* ViewController.h */,
 				A256D57C1F9095E40071A0DA /* ViewController.m */,
-				A256D5B61F90A24F0071A0DA /* index.ios.js */,
 				A256D57E1F9095E40071A0DA /* Main.storyboard */,
 				A256D5811F9095E40071A0DA /* Assets.xcassets */,
 				A256D5831F9095E40071A0DA /* LaunchScreen.storyboard */,
@@ -290,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A256D5B71F90A24F0071A0DA /* index.ios.js in Resources */,
 				A256D5851F9095E40071A0DA /* LaunchScreen.storyboard in Resources */,
 				A256D5821F9095E40071A0DA /* Assets.xcassets in Resources */,
 				A256D5801F9095E40071A0DA /* Main.storyboard in Resources */,
