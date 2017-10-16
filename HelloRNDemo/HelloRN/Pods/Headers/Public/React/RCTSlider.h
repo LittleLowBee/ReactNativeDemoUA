@@ -1,1 +1,1 @@
-../../../../ReactnNative/node_modules/react-native/React/Views/RCTSlider.h
+../../../../../node_modules/react-native/React/Views/RCTSlider.h

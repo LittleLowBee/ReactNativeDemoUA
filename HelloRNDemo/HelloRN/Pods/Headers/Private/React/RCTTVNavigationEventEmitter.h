@@ -1,1 +1,1 @@
-../../../../ReactnNative/node_modules/react-native/React/Modules/RCTTVNavigationEventEmitter.h
+../../../../../node_modules/react-native/React/Modules/RCTTVNavigationEventEmitter.h

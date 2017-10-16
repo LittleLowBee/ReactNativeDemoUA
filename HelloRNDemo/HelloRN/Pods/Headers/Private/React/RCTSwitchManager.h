@@ -1,1 +1,1 @@
-../../../../ReactnNative/node_modules/react-native/React/Views/RCTSwitchManager.h
+../../../../../node_modules/react-native/React/Views/RCTSwitchManager.h

@@ -1,1 +1,1 @@
-../../../../ReactnNative/node_modules/react-native/ReactCommon/cxxreact/JSBundleType.h
+../../../../../node_modules/react-native/ReactCommon/cxxreact/JSBundleType.h
