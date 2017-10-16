@@ -1,0 +1,54 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'HelloRN' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for HelloRN
+  
+  react_native_path = "./ReactnNative/node_modules/react-native”  #在podfile所在的目录下找到node_modules文件夹
+  pod "Yoga", :path => "#{react_native_path}/ReactCommon/yoga"
+  pod "React", :path => react_native_path, :subspecs => [
+  'Core',
+  'RCTActionSheet',
+  'RCTGeolocation',
+  'RCTImage',
+  'RCTLinkingIOS',
+  'RCTNetwork',
+  'RCTSettings',
+  'RCTText',
+  'RCTVibration',
+  'RCTWebSocket',
+  ]
+
+  
+#  pod 'React'
+#  pod 'React/Core'
+#  pod 'React/ART'
+#  pod 'React/RCTActionSheet'
+#  pod 'React/RCTAdSupport'
+#  pod 'React/RCTGeolocation'
+#  pod 'React/RCTImage'
+#  pod 'React/RCTNetwork'
+#  pod 'React/RCTPushNotification'
+#  pod 'React/RCTSettings'
+#  pod 'React/RCTText'
+#  pod 'React/RCTVibration'
+#  pod 'React/RCTWebSocket'
+#  pod 'React/RCTLinkingIOS'
+#
+#  pod 'Yoga'
+
+
+  target 'HelloRNTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HelloRNUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

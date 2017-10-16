@@ -38,6 +38,8 @@
 
 [ios集成react-native步骤](http://blog.csdn.net/u011171043/article/details/71773577)
 
+[React Native通过cocoaPods集成到现有iOS工程详解](http://www.cnblogs.com/yzx0803060320/p/5377518.html)
+
 [新手iOS原生接入ReactNative遇到的坑记录](http://www.jianshu.com/p/b182722df7a5)
 
 
