@@ -4,54 +4,103 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import React from 'react';
+import {StyleSheet, Text, View, Button} from 'react-native';
+import {StackNavigator, TabNavigator} from 'react-navigation';
+import SimpleApp1 from './app/HomePage';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
+class HomeScreen extends React.Component {
+    static navigationOptions = {
+        title: 'Welcome',
+        headerRight: <Button title="Info"/>,
+    };
+
+    render() {
+        const {navigate} = this.props.navigation;
+        return (
+            <View>
+              <Text>Hello, Chat App!</Text>
+              <Button
+                  onPress={() => navigate('Chat', {user: '小宋宋'})}
+                  title="HomeScreen with Lucy"
+              />
+            </View>
+        );
+    }
+}
+
+class ChatScreen extends React.Component {
+    // Nav options can be defined as a function of the screen's props:
+    static navigationOptions = ({navigation}) => ({
+        title: `Chat with ${navigation.state.params.user}`,
+    });
+
+    render() {
+        // The screen's current route is passed in to `props.navigation.state`:
+        const {params} = this.props.navigation.state;
+        return (
+            <View>
+              <Text>Chat with {params.user}</Text>
+            </View>
+        );
+    }
+}
+
+class PersonScreen extends React.Component {
+    static navigationOptions = {
+        title: 'PersonScreen ',
+    };
+
+    render() {
+        return (
+            <View>
+              <Text>Pserson with Lucy</Text>
+            </View>
+        );
+    }
+}
+
+const SimpleApp = StackNavigator({
+    Home: {screen: HomeScreen},
+    Chat: {screen: ChatScreen},
+    Person: {screen: PersonScreen},
 });
 
-export default class App extends Component<{}> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
-    );
-  }
+
+class RecentChatsScreen extends React.Component {
+    render() {
+        return <Text>List of recent chats</Text>
+    }
+}
+
+class AllContactsScreen extends React.Component {
+    render() {
+        return <Text>List of all contacts</Text>
+    }
+}
+
+const MainScreenNavigator = TabNavigator({
+    Recent: {screen: RecentChatsScreen},
+    All: {screen: AllContactsScreen},
+});
+
+
+export default class App extends React.Component {
+    render() {
+        return <SimpleApp1/>;
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 });
+
+
+
+
+
