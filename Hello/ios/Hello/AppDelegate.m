@@ -17,20 +17,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
-  // 返回URL
+
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-  NSLog(@"本地的URL.... %@", jsCodeLocation);
-  // 初始化根视图的View
+
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"Hello"
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-  
+
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  // 初始化根视图控制器
   UIViewController *rootViewController = [UIViewController new];
-  // 设置根视图的View
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
@@ -38,7 +35,3 @@
 }
 
 @end
-
-//-framework "JavaScriptCore" -l"yoga" -l"stdc++" -l"React"
-//-lc++  -ObjC $(inherited)
-
