@@ -31,6 +31,14 @@ class HomePage extends React.Component {
         return (
             <View style={styles.container}>
                 <Text style={{padding: 10}}>Hello, Navigation!</Text>
+
+                <View style={{flex: 1, flexDirection: 'row'}}>
+                    <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+                    <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+                    <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+                </View>
+
+
                 <Button
                     onPress={() => navigate('Chat', {user: 'Sybil'})}
                     title="点击跳转"/>

@@ -40,7 +40,15 @@
 
 [新手iOS原生接入ReactNative遇到的坑记录](http://www.jianshu.com/p/b182722df7a5)
 
+[React Native 源码导读(零) – 创建/运行/调试](http://blog.cnbang.net/tech/3461/)
 
+[React Native 从入门到原理](http://www.jianshu.com/p/978c4bd3a759)
+
+[React-Native(node_modules)](http://blog.csdn.net/shubinniu/article/details/52873250)
+
+[iReading App Write In React-Native](https://github.com/attentiveness/reading)
+
+[Navigation for React Native](https://reactnavigation.org/docs/navigators/tab)
 
 #### 一些别的链接
 
