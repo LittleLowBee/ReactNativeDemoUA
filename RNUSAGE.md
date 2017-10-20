@@ -50,6 +50,8 @@
 
 [Navigation for React Native](https://reactnavigation.org/docs/navigators/tab)
 
+[江清清的技术专栏](http://www.lcode.org)
+
 #### 一些别的链接
 
 [Git SSH Key 生成步骤](http://blog.csdn.net/qq_32385309/article/details/52013036)
