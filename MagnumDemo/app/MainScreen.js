@@ -27,8 +27,8 @@ const MyApp = TabNavigator({
             tabBarLabel:'首页',
             icon: ({tintColor}) => (
                 <Image
-                    style={[{tintColor: tintColor},styles.icon]}
                     source={require('./image/my.png')}
+                    style={[{tintColor: tintColor},styles.icon]}
                 />
             ),
         }
@@ -39,9 +39,8 @@ const MyApp = TabNavigator({
             tabBarLabel:'聊天',
             icon: ({tintColor}) => (
                 <Image
-                    // style={[{tintColor: tintColor},styles.icon]}
-                    style={styles.icon}
                     source={require('./image/hot.png')}
+                    style={[{tintColor: tintColor},styles.icon]}
                 />
             ),
 

@@ -52,6 +52,12 @@
 
 [江清清的技术专栏](http://www.lcode.org)
 
+[Android React Native加载图片资源的正确姿势](http://blog.csdn.net/sbsujjbcy/article/details/49981529)
+
+
+
+
+
 #### 一些别的链接
 
 [Git SSH Key 生成步骤](http://blog.csdn.net/qq_32385309/article/details/52013036)
