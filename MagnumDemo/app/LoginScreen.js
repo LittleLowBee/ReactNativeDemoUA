@@ -7,7 +7,8 @@ import {
     Text,
     Button,
     Image,
-    TextInput
+    TextInput,
+    Alert
 } from 'react-native';
 
 import {
@@ -36,6 +37,7 @@ class LoginScreen extends React.Component {
 
                 />
                 {/*登录button*/}
+
             </View>
         )
     }
