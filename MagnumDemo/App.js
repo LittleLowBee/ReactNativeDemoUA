@@ -11,8 +11,8 @@ import LoginScreen from './app/LoginScreen' // 登录界面
 export default class App extends Component<{}> {
 
   render() {
-      //return <MainScreen/> // 主页面
-      return <LoginScreen/> // 登录页面
+      return <MainScreen/> // 主页面
+      //return <LoginScreen/> // 登录页面
   }
 }
 

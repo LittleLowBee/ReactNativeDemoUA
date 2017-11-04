@@ -37,7 +37,6 @@ class LoginScreen extends React.Component {
 
                 />
                 {/*登录button*/}
-
             </View>
         )
     }
@@ -63,7 +62,7 @@ const styles = StyleSheet.create({
     }
 });
 
-
+// 出口
 export default LoginScreen
 
 
